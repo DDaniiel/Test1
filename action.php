@@ -21,9 +21,9 @@ function out_arr()
     global $countries;
     $arr_out = [];
     $arr_out[] = "<table  class=\"table text-white-50\">";
-    $arr_out[] = "<tr><td>№</td><td>Book</td><td>Name</td><td>Autor</td><td>Genre</td><td>Prise</td><td>Published</td><td>In stock</td></tr>";
+    $arr_out[] = "<tr><td>№</td><td>Book</td><td>Name</td><td>Autor</td><td>Genre</td><td>Prise</td><td>Published</td><td>In stock</td></tr> \n"; 
     foreach ($countries as $country) {
-        static $i = 1;
+        static $i = 1; 
         //статическая глобальная переменная-счетчик
         $str = "<tr>";
         $str .= "<td>" . $i . "</td>";
@@ -40,13 +40,14 @@ function out_arr()
                     $str .= "<td>$v</td>";
                 }
         }
-        $str .= "</tr>";
+      }
+        $str .= "</tr> \n";
         $arr_out[] = $str;
         $i++;
-    }
-    $arr_out[] = "</table>";
+}    
+    $arr_out[] = "</table> \n";
     return $arr_out;
-}
+
 }
 function name($a, $b)
 { // функция, определяющая способ сортировки (по названию столицы)
@@ -133,7 +134,13 @@ function out_arr_search(array $arr_index = null)
             $str = "<tr>" . "<td>" . $i . "</td>";
             foreach ($country as $key => $value) {
                 if (!is_array($value)) {
-                    $str .= "<td>$value</td>";
+                    //$str .= "<td>$value</td>";
+                    if($key == "poster"){
+                        $str .= "<td><img src=\"img/$value\"></td>";
+                    }
+                    else{
+                        $str .= "<td>$value</td>";
+                    } 
                 } else {
                     foreach ($value as $k => $v) {
                         $str .= "<td>$v</td>";

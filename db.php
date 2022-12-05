@@ -16,7 +16,7 @@ $countries = array(
         "genre" => "Story",
         "prise" => 140,
         "pub" => 1907,
-        "stok" => 16,
+        "stok" => 16, 
     ),
     array(
         "poster" => 'image3.jpg',
