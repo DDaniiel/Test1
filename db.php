@@ -10,7 +10,7 @@ $countries = array(
         "stok" => 26,
     ),
     array(
-        "poster" => 'image2.jpg',
+        "poster" => 'image4.jpg',
         "name" => "Love of Life",
         "autor" => "Jack London",
         "genre" => "Story",
@@ -19,7 +19,7 @@ $countries = array(
         "stok" => 16, 
     ),
     array(
-        "poster" => 'image3.jpg',
+        "poster" => 'image2.jpg',
         "name" => "Fantastic Beasts and Where to Find Them",
         "autor" => "J.K Rowling",
         "genre" => "Fantasy",
@@ -28,7 +28,7 @@ $countries = array(
         "stok" => 13,
     ),
     array(
-        "poster" => 'image4.jpg',
+        "poster" => 'image3.jpg',
         "name" => "White Fang",
         "autor" => "Jack London",
         "genre" => "Story",

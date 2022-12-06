@@ -127,7 +127,7 @@ function out_arr_search(array $arr_index = null)
     global $countries; // делаем переменную $countries глобальной
     $arr_out = array();
     $arr_out[] = "<table  class=\"table text-white-50\">";
-    $arr_out[] = "<tr><td>№</td><td>Book</td><td>Autor</td><td>Genre</td><td>Prise</td><td>Published</td><td>In stock</td></tr>";
+    $arr_out[] = "<tr><td>№</td><td>Book</td><td>Name</td><td>Autor</td><td>Genre</td><td>Prise</td><td>Published</td><td>In stock</td></tr>";
     foreach ($countries as $index => $country) {
         if ($arr_index != null && in_array($index, $arr_index)) {
             static $i = 1;
